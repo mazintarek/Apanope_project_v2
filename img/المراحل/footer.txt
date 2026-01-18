@@ -1,0 +1,37 @@
+ <footer>
+        <div class="footer-content">
+            <div class="footer-col footer-links">
+                <h3>روابط تهمك</h3>
+                <ul>
+                    <li><a href="#">برامج العلاج</a></li>
+                    <li><a href="#">تواصل معنا</a></li>
+                    <li><a href="#">مراكزنا العلاجية</a></li>
+                    <li><a href="#">الأسئلة الشائعة</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col footer-center">
+                <div class="footer-logo-box"><img src="icon.jpg" alt=""></div>
+                <h3>مستشفى تراست</h3>
+                <p style="color: #ccc; font-size: 0.9rem;">لعلاج الادمان والأمراض النفسية</p>
+                <div style="margin-top: 20px;">
+                    <p style="color: #bbb; font-size: 0.8rem;">نحن هنا لمساعدتك في أي وقت</p>
+                    <div class="hotline">0111111111 <i class="fa-solid fa-phone"></i></div>
+                </div>
+            </div>
+
+            <div class="footer-col" style="text-align: left;">
+                <div style="margin-bottom: 15px;">
+                    <span style="display: block; margin-bottom: 5px;">شارع 9 - المقطم - القاهرة</span>
+                    <span style="display: block;">TrustRecoveryHouse@gmail.com</span>
+                </div>
+                <div class="social-icons">
+                    <a href="#" class="social-btn fb"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-btn yt"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center; font-size: 0.8rem; color: #777; margin-top: 20px;">
+            جميع الحقوق محفوظة © 2026 مستشفى تراست
+        </div>
+    </footer>

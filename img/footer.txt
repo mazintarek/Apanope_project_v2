@@ -1,0 +1,241 @@
+<!--html-->
+ <footer class="footer">
+        <div class="footer-container">
+            
+            <div class="col-right">
+                <div class="brand-header">
+                    <div class="logo-container">
+                        <img src="icon.jpg" alt="Trust Logo">
+                    </div>
+                    <div class="brand-text">
+                        <h2>مستشفى تراست</h2>
+                        <h4>لعلاج الإدمان والأمراض النفسية</h4>
+                    </div>
+                </div>
+
+                <p>
+                    طلب المساعدة هي الخطوة الانتقالية بين مراحل العلاج داخل المركز العلاجي والمجتمع الخارجي، وإعادة دمج المريض داخل المجتمع لممارسة كافة الأنشطة الحياتية من جديد مرة أخرى.
+                </p>
+
+                <div class="social-icons">
+                    <a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="yt"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="col-center">
+                <div class="quote">
+                    إذا كان المرض يمثل مشكلة للمريض <br> فإن العلاج يمثل حل هذه المشكلة
+                </div>
+
+                <div class="contact-label">للمساعدة الطبية أو الاستفسار:</div>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span>01111111111</span>
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="contact-item">
+                        <span>شارع 9 - المقطم - القاهرة</span>
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-item">
+                        <span>TrustRecoveryHouse@gmail.com</span>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-left">
+                <h3>روابط تهمك</h3>
+                <ul class="links-list">
+                    <li>
+                        <a href="#">
+                            برامج العلاج
+                            <i class="fas fa-notes-medical"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            مراكزنا العلاجية
+                            <i class="fas fa-hospital-alt"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            الأسئلة الشائعة
+                            <i class="fas fa-question-circle"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+/*css*/
+        .footer {
+            background-color: #422a18;
+            color: #d8c2a3;
+            padding: 50px 20px 30px;
+            direction: rtl;
+            font-size: 15px;
+            border-top: 4px solid #cfaa76;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 30px;
+        }
+
+        /* --- العمود الأيمن (اللوجو + الاسم + الوصف) --- */
+        .col-right {
+            flex: 1.2; /* أعطيته مساحة أكبر قليلاً لاستيعاب اللوجو والاسم */
+            min-width: 300px;
+            text-align: right;
+        }
+
+        /* حاوية تجمع اللوجو والاسم بجانب بعض */
+        .brand-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .logo-container {
+            background: #fff;
+            padding: 5px;
+            border-radius: 10px;
+            flex-shrink: 0; /* منع اللوجو من الانكماش */
+        }
+
+        .logo-container img {
+            width: 70px;
+            height: auto;
+            display: block;
+        }
+
+        .brand-text h2 {
+            font-size: 20px;
+            color: #eaddcf;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .brand-text h4 {
+            font-size: 14px;
+            color: #cbbba6;
+            font-weight: normal;
+        }
+
+        .col-right p {
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: #dccfb8;
+            font-size: 14px;
+            text-align: justify; /* محاذاة النص ليبدو مرتباً */
+            padding-left: 20px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-icons a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .social-icons .fb { background-color: #1877f2; color: white; }
+        .social-icons .yt { background-color: #ff0000; color: white; }
+
+        /* --- العمود الأوسط (الاقتباس ومعلومات الاتصال) --- */
+        .col-center {
+            flex: 1;
+            min-width: 280px;
+            text-align: center;
+            padding-top: 20px; /* لضبط المحاذاة مع العمود اليمين */
+        }
+
+        .quote {
+            font-size: 15px;
+            margin-bottom: 30px;
+            line-height: 1.7;
+            color: #eaddcf;
+            font-weight: bold;
+        }
+
+        .contact-label {
+            margin-bottom: 15px;
+            color: #cfaa76;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #eaddcf;
+            font-size: 14px;
+            direction: ltr; /* لضبط ظهور الأرقام والكلمات الإنجليزية بشكل صحيح */
+        }
+        
+        /* إعادة ترتيب المحتوى داخل عنصر الاتصال ليتناسب مع الاتجاه العربي */
+        .contact-item span { order: 1; }
+        .contact-item i { order: 2; color: #cfaa76; font-size: 16px; }
+
+        /* --- العمود الأيسر (الروابط) --- */
+        .col-left {
+            flex: 0.8;
+            min-width: 200px;
+            text-align: right;
+            padding-right: 20px;
+        }
+
+        .col-left h3 {
+            font-size: 18px;
+            margin-bottom: 25px;
+            color: #eaddcf;
+        }
+
+        .links-list { list-style: none; }
+        .links-list li { margin-bottom: 15px; }
+
+        .links-list a {
+            text-decoration: none;
+            color: #dccfb8;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: 0.3s;
+        }
+
+        .links-list a:hover {
+            color: #fff;
+            transform: translateX(-5px);
+        }
+
+        .links-list i { color: #cfaa76; font-size: 14px; }

@@ -1,0 +1,26 @@
+    <header>
+        <div class="top-header">
+            <div class="contact-info-top">
+                <span>0111111111 <i class="fa-solid fa-phone-flip"></i></span>
+                <span>TrustRecoveryHouse@gmail.com <i class="fa-solid fa-envelope"></i></span>
+            </div>
+            <div class="logo-section">
+                <div style="text-align: left;">
+                    <h3>مستشفى تراست</h3>
+                    <p style="font-size: 0.7rem; color: #ccc; margin:0;">لعلاج الادمان والطب النفسي</p>
+                </div>
+                <div class="logo-placeholder"><img src="icon.jpg" alt=""></div>
+            </div>
+        </div>
+
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#">الرئيسية</a></li>
+                <li><a href="#">نبذة عنا</a></li>
+                <li><a href="#">برامج العلاج</a></li>
+                <li><a href="#">مراكزنا العلاجية</a></li>
+                <li><a href="#">الأسئلة الشائعة</a></li>
+            </ul>
+            <a href="#" class="cta-btn">اطلب المساعدة الآن</a>
+        </nav>
+    </header>
