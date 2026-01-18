@@ -452,7 +452,7 @@ header {
         }
 
         @media (max-width: 480px) {
-            header { padding: 10px 20px; width: 100%; right: -35px; position: absolute;}
+            header { padding: 10px 20px; width: 100%;  position: absolute;}
             .logo-text h1 { font-size: 1rem; }
             .contact-info-top { flex-direction: column; gap: 5px; font-size: 0.8rem; }
             .nav-links { flex-direction: column; gap: 15px; }
@@ -479,5 +479,3 @@ header {
         transition: 0.3s;
         display: block;
     }
-
-       
