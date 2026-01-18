@@ -1,0 +1,483 @@
+:root {
+    --dark-brown: #4d3620;
+    --gold-brown: #c18f3a;
+    --light-bg: #fdf8ef;
+    --text-color: #333;
+    --white: #ffffff;
+    --input-bg: #e0e0e0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+}
+
+body {
+    font-family: 'cairo', sans-serif;
+    position: relative;
+    padding-top: var(--header-height);
+}
+
+
+.scroller {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background-color: var(--gold-brown);
+    z-index: 9999;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--dark-brown);
+    color: var(--white);
+    padding: 10px 50px;
+    z-index: 1000;
+}
+
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-img {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.logo-img img {
+
+    width: 100%;
+}
+
+.logo-text h1 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 2px;
+}
+
+.logo-text p {
+    font-size: 0.8rem;
+    color: #ddd;
+}
+
+.contact-info-top {
+    display: flex;
+    gap: 20px;
+    font-size: 0.9rem;
+}
+
+.contact-info-top i {
+    margin-left: 5px;
+    color: var(--gold-brown);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li a {
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links li a i {
+    margin-left: 5px;
+    font-size: 0.9rem;
+}
+
+.nav-links li a:hover {
+    color: var(--gold-brown);
+}
+
+.cta-btn {
+    background-color: #a82e2e;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+
+
+.container .edman-img {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.container .edman-img img {
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: 10px 10px 30px 20px #333;
+}
+
+.container .edman-content li {
+    position: relative;
+    right: 50px;
+}
+
+.container .edman-img2 {
+    margin: auto;
+    text-align: center;
+}
+
+.container .edman-img2 img {
+    border-radius: 30px;
+    box-shadow: 10px 10px 30px 20px #333;
+    width: 70%;
+    height: 70vh;
+}
+
+.container .edman-img3 {
+    margin: auto;
+    text-align: center;
+}
+
+.container .edman-img3 img {
+    border-radius: 30px;
+    box-shadow: 10px 10px 30px 20px #333;
+    width: 70%;
+    height: 70vh;
+}
+
+.container .edman-img3 img {
+    border-radius: 30px;
+    box-shadow: 10px 10px 30px 20px #333;
+    width: 70%;
+    height: 70vh;
+}
+
+.container .edman-img4 {
+    margin: auto;
+    text-align: center;
+}
+
+.container .edman-img4 img {
+    border-radius: 30px;
+    box-shadow: 10px 10px 30px 20px #333;
+    width: 70%;
+    height: 70vh;
+}
+
+.container .edman-img5 {
+    margin: auto;
+    text-align: center;
+}
+
+.container .edman-img5 img {
+    border-radius: 30px;
+    box-shadow: 10px 10px 30px 20px #333;
+    width: 70%;
+    height: 70vh;
+}
+
+.container .edman-img6 {
+    margin: auto;
+    text-align: center;
+}
+
+.container .edman-img6 img {
+    border-radius: 30px;
+    box-shadow: 10px 10px 30px 20px #333;
+    width: 70%;
+    height: 70vh;
+}
+
+
+
+.container .center-text {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.footer {
+    background-color: #422a18;
+    color: #d8c2a3;
+    padding: 50px 20px 30px;
+    direction: rtl;
+    font-size: 15px;
+    border-top: 4px solid #cfaa76;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+/* --- العمود الأيمن (اللوجو + الاسم + الوصف) --- */
+.col-right {
+    flex: 1.2;
+    /* أعطيته مساحة أكبر قليلاً لاستيعاب اللوجو والاسم */
+    min-width: 300px;
+    text-align: right;
+}
+
+/* حاوية تجمع اللوجو والاسم بجانب بعض */
+.brand-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.logo-container {
+    background: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    flex-shrink: 0;
+    /* منع اللوجو من الانكماش */
+}
+
+.logo-container img {
+    width: 70px;
+    height: auto;
+    display: block;
+}
+
+.brand-text h2 {
+    font-size: 20px;
+    color: #eaddcf;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.brand-text h4 {
+    font-size: 14px;
+    color: #cbbba6;
+    font-weight: normal;
+}
+
+.col-right p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #dccfb8;
+    font-size: 14px;
+    text-align: justify;
+    /* محاذاة النص ليبدو مرتباً */
+    padding-left: 20px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.social-icons .fb {
+    background-color: #1877f2;
+    color: white;
+}
+
+.social-icons .yt {
+    background-color: #ff0000;
+    color: white;
+}
+
+/* --- العمود الأوسط (الاقتباس ومعلومات الاتصال) --- */
+.col-center {
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+    padding-top: 20px;
+    /* لضبط المحاذاة مع العمود اليمين */
+}
+
+.quote {
+    font-size: 15px;
+    margin-bottom: 30px;
+    line-height: 1.7;
+    color: #eaddcf;
+    font-weight: bold;
+}
+
+.contact-label {
+    margin-bottom: 15px;
+    color: #cfaa76;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #eaddcf;
+    font-size: 14px;
+    direction: ltr;
+    /* لضبط ظهور الأرقام والكلمات الإنجليزية بشكل صحيح */
+}
+
+/* إعادة ترتيب المحتوى داخل عنصر الاتصال ليتناسب مع الاتجاه العربي */
+.contact-item span {
+    order: 1;
+}
+
+.contact-item i {
+    order: 2;
+    color: #cfaa76;
+    font-size: 16px;
+}
+
+/* --- العمود الأيسر (الروابط) --- */
+.col-left {
+    flex: 0.8;
+    min-width: 200px;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.col-left h3 {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #eaddcf;
+}
+
+.links-list {
+    list-style: none;
+}
+
+.links-list li {
+    margin-bottom: 15px;
+}
+
+.links-list a {
+    text-decoration: none;
+    color: #dccfb8;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.links-list a:hover {
+    color: #fff;
+    transform: translateX(-5px);
+}
+
+.links-list i {
+    color: #cfaa76;
+    font-size: 14px;
+}
+        @media (max-width: 768px) {
+            .shape-container { background: var(--gold-brown); } 
+            .container { flex-direction: column-reverse; width: 95%; }
+            .top-header, .navbar { flex-direction: column; gap: 10px; }
+            .footer-container {
+                flex-direction: column;
+                text-align: center;
+                gap: 40px;
+            }
+            .col-right, .col-left, .col-center {
+                text-align: center;
+                padding: 0;
+            }
+            .brand-header {
+                justify-content: center; /* توسيط اللوجو والاسم في الموبايل */
+                flex-direction: column;
+                text-align: center;
+            }
+            .col-right p { text-align: center; padding: 0; }
+            .social-icons { justify-content: center; }
+            .links-list a { justify-content: center; }
+        }
+
+        @media (max-width: 480px) {
+            header { padding: 10px 20px; width: 100%; right: -35px; position: absolute;}
+            .logo-text h1 { font-size: 1rem; }
+            .contact-info-top { flex-direction: column; gap: 5px; font-size: 0.8rem; }
+            .nav-links { flex-direction: column; gap: 15px; }
+            .cta-btn { padding: 6px 12px; font-size: 0.8rem; }
+        }
+            .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: var(--dark-brown);
+        min-width: 200px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        border-radius: 5px;
+    }
+    .dropdown-content a {
+        color: white;
+        padding: 10px 15px;
+        text-decoration: none;
+        display: block;
+        font-size: 0.9rem;
+        text-align: right;
+    }
+    .dropdown:hover .dropdown-content {
+        transition: 0.3s;
+        display: block;
+    }
+
+       
