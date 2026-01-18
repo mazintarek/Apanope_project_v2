@@ -418,7 +418,6 @@ header {
 
         @media (max-width: 768px) {
             header{
-                left: -333px;
                 position: absolute;
             }
             .shape-container { background: var(--gold-brown); } 
