@@ -464,6 +464,20 @@ header {
         }
 
         @media (max-width: 480px) {
+            .container .edman-img2 img ,
+             .container .edman-img3 img ,
+              .container .edman-img4 img,
+              .container .edman-img img ,
+              .container .edman-img5 img,
+              .container .edman-img6 img{
+                 max-width: 100%; height: auto; 
+                }
+                .container .center-text {
+                    font-size: 0.9rem;
+                }
+                .container .edman-img5 img {
+                    height: 30vh;
+                }
             li {
                 line-height: 1.6;/* تحسين قابلية القراءة */
                 overflow: break-word;
@@ -498,5 +512,6 @@ header {
         transition: 0.3s;
         display: block;
     }
+
 
        
