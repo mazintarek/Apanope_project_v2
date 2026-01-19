@@ -19,7 +19,7 @@ body {
     font-family: 'cairo', sans-serif;
     position: relative;
     padding-top: var(--header-height);
-    background-color: rgb(223, 211, 188);
+    background-color: #fff;
 }
 
 .scroller {
@@ -150,9 +150,9 @@ header {
     width: 90%;
     margin: auto;
     text-align: center;
-    background-color: rgb(231, 214, 183);
+    background-color: #fff;
     border-radius: 20px;
-    border: 1px solid rgb(197, 197, 197);
+    border: 1px solid #000;
     min-width: 90%;
     box-shadow: 4px 4px 30px 5px rgb(63, 63, 63);
     margin-bottom: 180px;
@@ -171,8 +171,8 @@ header {
     justify-content: center;
     height: 400px;
     gap: 20px;
-    background-color: rgb(231, 214, 183);
-    border: 1px solid rgb(197, 197, 197);
+    background-color: #fff;
+    border: 1px solid #000;
     border-radius: 20px;
     margin-bottom: 50px;
     box-shadow: 4px 4px 30px 5px rgb(63, 63, 63);
