@@ -13,6 +13,9 @@
     box-sizing: border-box;
     direction: rtl;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'cairo', sans-serif;
@@ -432,6 +435,12 @@ header {
     font-size: 14px;
 }
         @media (max-width: 768px) {
+            li {
+                line-height: 1.6;/* تحسين قابلية القراءة */
+                overflow: break-word;
+                word-wrap: break-word;
+                max-width: 80%;
+            }
             .shape-container { background: var(--gold-brown); } 
             .container { flex-direction: column-reverse; width: 94%; }
             .top-header, .navbar { flex-direction: column; gap: 10px; }
@@ -455,14 +464,20 @@ header {
         }
 
         @media (max-width: 480px) {
+            li {
+                line-height: 1.6;/* تحسين قابلية القراءة */
+                overflow: break-word;
+                word-wrap: break-word;
+                max-width: 80%;
+            }
             .container { flex-direction: column-reverse; width: 94%; }
-            header { left: 0; padding: 10px 20px; width: 100%;  position: absolute;}
+            header { padding: 10px 20px; width: 100%;  position: absolute;}
             .logo-text h1 { font-size: 1rem; }
             .contact-info-top { flex-direction: column; gap: 5px; font-size: 0.8rem; }
             .nav-links { flex-direction: column; gap: 15px; }
             .cta-btn { padding: 6px 12px; font-size: 0.8rem; }
         }
-            .dropdown-content {
+    .dropdown-content {
         display: none;
         position: absolute;
         background-color: var(--dark-brown);
