@@ -474,7 +474,7 @@
 
         /* الموبايل */
         @media (max-width: 768px) {
-            .hero{ margin-top: 30px;}
+            .hero{ margin-top: 0;}
             header .top-header, header .navbar { flex-direction: column; gap: 10px; }
             .nav-links { flex-direction: column; width: 100%; text-align: center; }
             header{ padding: 10px 20px; position: relative;  }
@@ -506,7 +506,7 @@
             height: 100%;
         }
             @media (max-width: 480px) {
-            .hero{ margin-top: 30px;}
+            .hero{ margin-top: 0;}
             header { padding: 10px 20px; width: 100%; position: relative; }
             .logo-text h1 { font-size: 1rem; }
             .contact-info-top { flex-direction: column; gap: 5px; font-size: 0.8rem; }
@@ -546,3 +546,4 @@
         transition: 0.3s;
         display: block;
     }
+
