@@ -19,7 +19,7 @@ body {
     font-family: 'cairo', sans-serif;
     position: relative;
     padding-top: var(--header-height);
-    background-color: #fff;
+    background-color: #dcdcdc;
 }
 
 .scroller {
@@ -150,7 +150,7 @@ header {
     width: 90%;
     margin: auto;
     text-align: center;
-    background-color: #fff;
+    background-color: #dcdcdc;
     border-radius: 20px;
     border: 1px solid #000;
     min-width: 90%;
@@ -171,7 +171,7 @@ header {
     justify-content: center;
     height: 400px;
     gap: 20px;
-    background-color: #fff;
+    background-color: #dcdcdc;
     border: 1px solid #000;
     border-radius: 20px;
     margin-bottom: 50px;
