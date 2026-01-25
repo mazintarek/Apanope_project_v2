@@ -8,6 +8,9 @@
             --text-gray: #555;
             --white: #ffffff;
         }
+        html{
+            scroll-behavior: smooth;
+        }
 
         * {
             box-sizing: border-box;
@@ -154,13 +157,16 @@
 
         .hero-buttons { display: flex; gap: 20px; justify-content: center; margin-bottom: 60px; }
         
-        .btn-primary {
+        /* .btn-primary {
             background-color: var(--light-bg); color: var(--text-dark);
             padding: 12px 30px; border-radius: 5px; font-weight: bold; font-size: 1.1rem;
-        }
-        .btn-outline {
+        } */
+        .btn-outline,.btn-primary {
             background-color: transparent; color: white; border: 2px solid white;
             padding: 12px 30px; border-radius: 5px; font-weight: bold; font-size: 1.1rem;
+        }
+        .btn-outline:hover,.btn-primary:hover {
+            color: #000;background-color: #fff;cursor: pointer;transition: 1s;
         }
 
         /* الإحصائيات أسفل الهيرو */
@@ -474,7 +480,7 @@
 
         /* الموبايل */
         @media (max-width: 768px) {
-            .hero{ margin-top: 0;}
+            .hero{ margin-top: 30px;}
             header .top-header, header .navbar { flex-direction: column; gap: 10px; }
             .nav-links { flex-direction: column; width: 100%; text-align: center; }
             header{ padding: 10px 20px; position: relative;  }
@@ -506,7 +512,7 @@
             height: 100%;
         }
             @media (max-width: 480px) {
-            .hero{ margin-top: 0;}
+            .hero{ margin-top: 30px;}
             header { padding: 10px 20px; width: 100%; position: relative; }
             .logo-text h1 { font-size: 1rem; }
             .contact-info-top { flex-direction: column; gap: 5px; font-size: 0.8rem; }
@@ -546,4 +552,65 @@
         transition: 0.3s;
         display: block;
     }
+/* تنسيق الصفحة العام */
+        .more_sction {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+        }
 
+        /* حاوية الصور (الأب) */
+        .gallery-container {
+            display: grid;
+            /* هنا بنقوله يقسم الصفحة عمودين قد بعض بالظبط */
+            grid-template-columns: 1fr 1fr; 
+            /* المسافة بين الصور وبعضها */
+            gap: 10px; 
+            max-width: 800px; /* أقصى عرض عشان متبقاش عريضة أوي */
+            width: 100%;
+            background: white;
+            padding: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        /* تنسيق الصور نفسها */
+        .gallery-container img {
+            width: 100%;
+            height: 250px; /* ارتفاع ثابت عشان الصور تبقى قد بعض */
+            object-fit: cover; /* عشان الصورة تملا المكان من غير ما تتمط */
+            border-radius: 4px;
+            transition: transform 0.3s ease;
+        }
+
+        /* تأثير لما تقف بالماوس على الصورة */
+        .gallery-container img:hover {
+            transform: scale(1.02);
+        }
+
+        /* --- السحر كله هنا --- */
+
+        /* أول صورة: خليها تاخد مساحة عمودين (العرض كله) */
+        .gallery-container img:nth-child(1) {
+            grid-column: span 2;
+            height: 350px; /* ممكن نكبرها شوية في الطول */
+        }
+
+        /* آخر صورة (رقم 6): خليها تاخد مساحة عمودين برضه */
+        .gallery-container img:nth-child(6) {
+            grid-column: span 2;
+        }
+
+        /* عشان الموبايل: الصور كلها تبقى تحت بعض */
+        @media (max-width: 600px) {
+            .gallery-container {
+                grid-template-columns: 1fr; /* عمود واحد بس */
+            }
+            .gallery-container img:nth-child(1),
+            .gallery-container img:nth-child(6) {
+                grid-column: span 1; /* يرجعوا ياخدوا مكان عادي */
+            }
+        }
