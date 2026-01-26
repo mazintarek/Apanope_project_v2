@@ -497,6 +497,7 @@
             .features-row { flex-direction: column; }
             .footer-content { flex-direction: column; text-align: center; }
             .social-icons { justify-content: center; }
+            .bg_main_page{width: 100%; height: 100vh;}
         }
         img {
             width: 100%;
@@ -530,8 +531,12 @@
             .slider-wrapper { padding: 0 5% 40px 5%; }
             .team-features { padding: 40px 5%; }
             .footer { font-size: 13px; padding: 30px 10px 20px; }
+            .bg_main_page{width: 100%; height: 100vh;}
         }
-            .dropdown-content {
+        @media (max-width: 1180px) {
+            .bg_main_page{width: 100%; height: 100vh;}
+        }
+        .dropdown-content {
         display: none;
         position: absolute;
         background-color: var(--dark-brown);
