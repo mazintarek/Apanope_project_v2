@@ -1,16 +1,17 @@
        /* إعدادات عامة */
         :root {
             --primary-brown: #5D4037; /* اللون البني الأساسي */
-            --dark-brown: #4d3620;   /* البني الغامق للفوتر */
             --bg-cream: #FFF8E1;     /* الخلفية الكريمي */
             --accent-orange: #FF6F00; /* البرتقالي */
             --text-color: #333;
-            --accent-green: #4CAF50; /* الأخضر للتحديد */
-            --gold-brown: #c18f3a; /* اللون الذهبي البني */ 
-            --light-bg: #fdf8ef;  
+            --accent-green: #4CAF50; /* الأخضر للتحديد */ 
             --text-color: #333;
             --white: #ffffff;
             --input-bg: #e0e0e0;
+            --dark-brown: #5a3c0b; /* الهيدر والفوتر */
+            --gold-brown: #c48b28; /* الخلفيات الذهبية */
+            --gold-light: #ebc176; /* درجات فاتحة */
+            --light-bg: #fff5e1;   /* خلفية الصفحة */
         }
 
         * {
@@ -21,7 +22,7 @@
 
         body {
             font-family: 'Tajawal', sans-serif;
-            background-color: var(--bg-cream);
+            background-color: var(--light-bg);
             color: var(--text-color);
             line-height: 1.6;
         }
@@ -252,7 +253,7 @@
 
         /* الفوتر */
         .footer {
-            background-color: #422a18;
+            background-color: var(--dark-brown);
             color: #d8c2a3;
             padding: 50px 20px 30px;
             direction: rtl;
