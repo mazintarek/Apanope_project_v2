@@ -1,7 +1,8 @@
 :root {
-    --dark-brown: #4d3620;
-    --gold-brown: #c18f3a;
-    --light-bg: #fdf8ef;
+    --dark-brown: #5a3c0b; /* الهيدر والفوتر */
+    --gold-brown: #c48b28; /* الخلفيات الذهبية */
+    --gold-light: #ebc176; /* درجات فاتحة */
+    --light-bg: #fff5e1;   /* خلفية الصفحة */
     --text-color: #333;
     --white: #ffffff;
     --input-bg: #e0e0e0;
@@ -19,7 +20,7 @@ body {
     font-family: 'cairo', sans-serif;
     position: relative;
     padding-top: var(--header-height);
-    background-color: #dcdcdc;
+    background-color: var(--light-bg);
 }
 
 .scroller {
@@ -203,7 +204,7 @@ header {
 
 
 .footer {
-    background-color: #422a18;
+    background-color: var(--dark-brown);
     color: #d8c2a3;
     padding: 50px 20px 30px;
     direction: rtl;
